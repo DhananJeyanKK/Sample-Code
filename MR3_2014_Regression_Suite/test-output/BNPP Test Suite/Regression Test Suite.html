@@ -1,0 +1,1192 @@
+<html>
+<head>
+<title>TestNG:  Regression Test Suite</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Regression Test Suite</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>24/16/0</td>
+</tr><tr>
+<td>Started on:</td><td>Thu Feb 19 12:13:10 GMT+05:30 2015</td>
+</tr>
+<tr><td>Total time:</td><td>1493 seconds (1493296 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bnpp.source.ManageBeneficiaries.bmFavourite()'><b>bmFavourite</b><br>Test class: com.bnpp.source.ManageBeneficiaries</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;modal carousel-modal  selectionlist-modal auto-height in&quot; id=&quot;sf-gen-4&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 287c4eebd783d783c49d1c9d26fc636e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.xEH8xA}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.ManageBeneficiaries.bmFavourite(ManageBeneficiaries.java:964)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1139537151", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1139537151'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;modal carousel-modal  selectionlist-modal auto-height in&quot; id=&quot;sf-gen-4&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 18 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 287c4eebd783d783c49d1c9d26fc636e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.xEH8xA}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.ManageBeneficiaries.bmFavourite(ManageBeneficiaries.java:964)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.ManageBeneficiaries@4911b910</td></tr>
+<tr>
+<td title='com.bnpp.source.ManageBeneficiaries.bmTosct()'><b>bmTosct</b><br>Test class: com.bnpp.source.ManageBeneficiaries</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;modal carousel-modal  selectionlist-modal auto-height in&quot; id=&quot;sf-gen-4&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 287c4eebd783d783c49d1c9d26fc636e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.xEH8xA}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.ManageBeneficiaries.bmTosct(ManageBeneficiaries.java:836)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace944419850", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace944419850'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;modal carousel-modal  selectionlist-modal auto-height in&quot; id=&quot;sf-gen-4&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;myModalLabel&quot; aria-hidden=&quot;false&quot; style=&quot;display: block;&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 287c4eebd783d783c49d1c9d26fc636e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.xEH8xA}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.ManageBeneficiaries.bmTosct(ManageBeneficiaries.java:836)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.ManageBeneficiaries@4911b910</td></tr>
+<tr>
+<td title='com.bnpp.source.FAQ.faq()'><b>faq</b><br>Test class: com.bnpp.source.FAQ</td>
+<td><div><pre>java.lang.AssertionError: expected [false] but found [true]
+	at com.bnpp.source.FAQ.faq(FAQ.java:172)
+... Removed 29 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace385491364", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace385491364'><pre>java.lang.AssertionError: expected [false] but found [true]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertEquals(Assert.java:123)
+	at org.testng.Assert.assertEquals(Assert.java:286)
+	at org.testng.Assert.assertEquals(Assert.java:296)
+	at com.bnpp.source.FAQ.faq(FAQ.java:172)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>51</td>
+<td>com.bnpp.source.FAQ@7a0d85cc</td></tr>
+<tr>
+<td title='com.bnpp.source.StandingOrders.printcreatedSTO()'><b>printcreatedSTO</b><br>Test class: com.bnpp.source.StandingOrders</td>
+<td><div><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for element to no longer be visible: By.className: progressing
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 496f9102e8c032d789b6f238f4af243d
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.3Mk1vf}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.bnpp.source.StandingOrders.modifyStandingOrders(StandingOrders.java:550)
+	at com.bnpp.source.StandingOrders.printcreatedSTO(StandingOrders.java:777)
+... Removed 24 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace730403186", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace730403186'><pre>org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for element to no longer be visible: By.className: progressing
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 496f9102e8c032d789b6f238f4af243d
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.3Mk1vf}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at com.bnpp.source.StandingOrders.modifyStandingOrders(StandingOrders.java:550)
+	at com.bnpp.source.StandingOrders.printcreatedSTO(StandingOrders.java:777)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>126</td>
+<td>com.bnpp.source.StandingOrders@48a77106</td></tr>
+<tr>
+<td title='com.bnpp.source.ManageBeneficiaries.whitelistedbmToSCT()'><b>whitelistedbmToSCT</b><br>Test class: com.bnpp.source.ManageBeneficiaries</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (386, 416). Other element would receive the click: &lt;span class=&quot;optgroup-name&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 287c4eebd783d783c49d1c9d26fc636e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.xEH8xA}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.ManageBeneficiaries.whitelistedbmToSCT(ManageBeneficiaries.java:784)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace646054311", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace646054311'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (386, 416). Other element would receive the click: &lt;span class=&quot;optgroup-name&quot;&gt;...&lt;/span&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 28 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: 287c4eebd783d783c49d1c9d26fc636e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.xEH8xA}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.ManageBeneficiaries.whitelistedbmToSCT(ManageBeneficiaries.java:784)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>30</td>
+<td>com.bnpp.source.ManageBeneficiaries@4911b910</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitDirectdebit()'><b>zoomitDirectdebit</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitDirectdebit(Zoomit.java:489)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1455364682", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1455364682'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitDirectdebit(Zoomit.java:489)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitHistory()'><b>zoomitHistory</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitHistory(Zoomit.java:1116)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace776960962", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace776960962'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitHistory(Zoomit.java:1116)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitInvoices1()'><b>zoomitInvoices1</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (712, 55). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitInvoices1(Zoomit.java:108)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1508661727", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1508661727'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (712, 55). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitInvoices1(Zoomit.java:108)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>44</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitInvoices2()'><b>zoomitInvoices2</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitInvoices2(Zoomit.java:251)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1146625698", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1146625698'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 24 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitInvoices2(Zoomit.java:251)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitInvoices3()'><b>zoomitInvoices3</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitInvoices3(Zoomit.java:377)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace614739081", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace614739081'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 17 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitInvoices3(Zoomit.java:377)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitPaySlips1()'><b>zoomitPaySlips1</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitPaySlips1(Zoomit.java:720)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace280914008", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace280914008'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 13 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitPaySlips1(Zoomit.java:720)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitPaySlips2()'><b>zoomitPaySlips2</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitPaySlips2(Zoomit.java:876)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1425935585", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1425935585'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 12 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitPaySlips2(Zoomit.java:876)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitPaySlips3()'><b>zoomitPaySlips3</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitPaySlips3(Zoomit.java:1001)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace460029827", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace460029827'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitPaySlips3(Zoomit.java:1001)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitSearch()'><b>zoomitSearch</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitSearch(Zoomit.java:1432)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace119227759", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace119227759'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitSearch(Zoomit.java:1432)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitSearch1()'><b>zoomitSearch1</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitSearch1(Zoomit.java:1503)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace581882789", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace581882789'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitSearch1(Zoomit.java:1503)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+<tr>
+<td title='com.bnpp.source.Zoomit.zoomitSenders()'><b>zoomitSenders</b><br>Test class: com.bnpp.source.Zoomit</td>
+<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitSenders(Zoomit.java:600)
+... Removed 28 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace112460867", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace112460867'><pre>org.openqa.selenium.WebDriverException: unknown error: Element is not clickable at point (124, 40). Other element would receive the click: &lt;div class=&quot;progressing show_active&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=40.0.2214.111)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 11 milliseconds
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: a939f551ac702bbd86d924dfb6e1e4d4
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.W45VOY}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.111, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:268)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:79)
+	at com.bnpp.source.Zoomit.zoomitSenders(Zoomit.java:600)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+</pre></div></td>
+<td>0</td>
+<td>com.bnpp.source.Zoomit@580eac5a</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='com.bnpp.source.Transactions.Pendingtransaction()'><b>Pendingtransaction</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>87</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+<tr>
+<td title='com.bnpp.source.Transactions.Rejectedtransaction()'><b>Rejectedtransaction</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>23</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+<tr>
+<td title='com.bnpp.source.LoginModule.StoretheProfile()'><b>StoretheProfile</b><br>Test class: com.bnpp.source.LoginModule</td>
+<td></td>
+<td>63</td>
+<td>com.bnpp.source.LoginModule@6b687e7c</td></tr>
+<tr>
+<td title='com.bnpp.source.Transactions.bookedFilter()'><b>bookedFilter</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>35</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+<tr>
+<td title='com.bnpp.source.Transactions.bookedSearch()'><b>bookedSearch</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>19</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+<tr>
+<td title='com.bnpp.source.ManageBeneficiaries.createBlacklisted()'><b>createBlacklisted</b><br>Test class: com.bnpp.source.ManageBeneficiaries</td>
+<td></td>
+<td>79</td>
+<td>com.bnpp.source.ManageBeneficiaries@4911b910</td></tr>
+<tr>
+<td title='com.bnpp.source.StandingOrders.createStandingOrders1()'><b>createStandingOrders1</b><br>Test class: com.bnpp.source.StandingOrders</td>
+<td></td>
+<td>112</td>
+<td>com.bnpp.source.StandingOrders@48a77106</td></tr>
+<tr>
+<td title='com.bnpp.source.StandingOrders.createStandingOrders2()'><b>createStandingOrders2</b><br>Test class: com.bnpp.source.StandingOrders</td>
+<td></td>
+<td>38</td>
+<td>com.bnpp.source.StandingOrders@48a77106</td></tr>
+<tr>
+<td title='com.bnpp.source.StandingOrders.createStandingOrders3()'><b>createStandingOrders3</b><br>Test class: com.bnpp.source.StandingOrders</td>
+<td></td>
+<td>47</td>
+<td>com.bnpp.source.StandingOrders@48a77106</td></tr>
+<tr>
+<td title='com.bnpp.source.ManageBeneficiaries.createWhitelisted()'><b>createWhitelisted</b><br>Test class: com.bnpp.source.ManageBeneficiaries</td>
+<td></td>
+<td>18</td>
+<td>com.bnpp.source.ManageBeneficiaries@4911b910</td></tr>
+<tr>
+<td title='com.bnpp.source.ManageBeneficiaries.delete()'><b>delete</b><br>Test class: com.bnpp.source.ManageBeneficiaries</td>
+<td></td>
+<td>14</td>
+<td>com.bnpp.source.ManageBeneficiaries@4911b910</td></tr>
+<tr>
+<td title='com.bnpp.source.StandingOrders.deleteStandingOrders()'><b>deleteStandingOrders</b><br>Test class: com.bnpp.source.StandingOrders</td>
+<td></td>
+<td>29</td>
+<td>com.bnpp.source.StandingOrders@48a77106</td></tr>
+<tr>
+<td title='com.bnpp.source.LoginModule.deletetheProfile()'><b>deletetheProfile</b><br>Test class: com.bnpp.source.LoginModule</td>
+<td></td>
+<td>63</td>
+<td>com.bnpp.source.LoginModule@6b687e7c</td></tr>
+<tr>
+<td title='com.bnpp.source.FAQ.faqSearch()'><b>faqSearch</b><br>Test class: com.bnpp.source.FAQ</td>
+<td></td>
+<td>10</td>
+<td>com.bnpp.source.FAQ@7a0d85cc</td></tr>
+<tr>
+<td title='com.bnpp.source.ManageBeneficiaries.modify()'><b>modify</b><br>Test class: com.bnpp.source.ManageBeneficiaries</td>
+<td></td>
+<td>37</td>
+<td>com.bnpp.source.ManageBeneficiaries@4911b910</td></tr>
+<tr>
+<td title='com.bnpp.source.StandingOrders.modifyStandingOrders()'><b>modifyStandingOrders</b><br>Test class: com.bnpp.source.StandingOrders</td>
+<td></td>
+<td>34</td>
+<td>com.bnpp.source.StandingOrders@48a77106</td></tr>
+<tr>
+<td title='com.bnpp.source.Transactions.plannedtransaction()'><b>plannedtransaction</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>17</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+<tr>
+<td title='com.bnpp.source.Transactions.printbooked()'><b>printbooked</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>29</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+<tr>
+<td title='com.bnpp.source.ManageBeneficiaries.searchfilter()'><b>searchfilter</b><br>Test class: com.bnpp.source.ManageBeneficiaries</td>
+<td></td>
+<td>31</td>
+<td>com.bnpp.source.ManageBeneficiaries@4911b910</td></tr>
+<tr>
+<td title='com.bnpp.source.Transactions.transactionStatementsTab()'><b>transactionStatementsTab</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>66</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+<tr>
+<td title='com.bnpp.source.Transactions.transactiondetailsTab()'><b>transactiondetailsTab</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>5</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+<tr>
+<td title='com.bnpp.source.Transactions.transactionsToSCT()'><b>transactionsToSCT</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>44</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+<tr>
+<td title='com.bnpp.source.Transactions.transactionsToSTO()'><b>transactionsToSTO</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>42</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+<tr>
+<td title='com.bnpp.source.Transactions.transactionsToSepaDD()'><b>transactionsToSepaDD</b><br>Test class: com.bnpp.source.Transactions</td>
+<td></td>
+<td>46</td>
+<td>com.bnpp.source.Transactions@3caa4b</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression Test Suite - All"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="123.688">
+  <properties />
+  
+  
+            <testcase name="faqSearch" time="8.444" classname="com.bnpp.source.FAQ" />
+                <testcase name="faq" time="44.664" classname="com.bnpp.source.FAQ" />
+                <testcase name="faqInnerCheck" time="70.580" classname="com.bnpp.source.FAQ" />
+      
+</testsuite>

@@ -1,0 +1,27 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="BNPP Test Suite" verbose="1">
+
+	<listeners>
+		<listener class-name="org.uncommons.reportng.HTMLReporter" />
+		<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+	</listeners>
+
+	 <test name="Regression Test Suite - All">
+   
+  		<classes>
+ 		     
+ 		     <class name="com.bnpp.source.Transfers" />
+ 		     <class name="com.bnpp.source.AccountsCardsFAQ" />
+  		     <class name="com.bnpp.source.LoginModule" />
+       	     <class name="com.bnpp.source.StandingOrders" />
+		     <class name="com.bnpp.source.ManageBeneficiaries" />
+             <class name="com.bnpp.source.Transactions" />
+      
+<!--         <class name="com.bnpp.source.Zoomit" /> -->
+       
+		</classes>
+
+   	</test>
+
+</suite>

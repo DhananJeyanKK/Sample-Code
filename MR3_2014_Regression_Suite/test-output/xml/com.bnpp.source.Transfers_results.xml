@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression Test Suite - All"
+           tests="3"
+           failures="0"
+           errors="0"
+           skipped="0"
+           time="162.468">
+  <properties />
+  
+  
+            <testcase name="transfersToSTO" time="55.511" classname="com.bnpp.source.Transfers" />
+                <testcase name="createFreeCommunication" time="18.605" classname="com.bnpp.source.Transfers" />
+                <testcase name="createNoCommunication" time="88.352" classname="com.bnpp.source.Transfers" />
+      
+</testsuite>

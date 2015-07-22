@@ -1,0 +1,480 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="Regression Test Suite - All"
+           tests="11"
+           failures="11"
+           errors="0"
+           skipped="0"
+           time="101.095">
+  <properties />
+            <testcase name="zoomitPaySlips1" time="0.000" classname="com.bnpp.source.Zoomit">
+                <failure type="java.io.FileNotFoundException"
+                  message="/Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)"
+              >
+<![CDATA[java.io.FileNotFoundException: /Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)
+  java.io.FileInputStream.open(Native Method)
+  java.io.FileInputStream.<init>(FileInputStream.java:120)
+  java.io.FileInputStream.<init>(FileInputStream.java:79)
+  com.bnpp.source.Zoomit.zoomitPaySlips1(Zoomit.java:712)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="zoomitInvoices3" time="0.000" classname="com.bnpp.source.Zoomit">
+                <failure type="java.io.FileNotFoundException"
+                  message="/Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)"
+              >
+<![CDATA[java.io.FileNotFoundException: /Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)
+  java.io.FileInputStream.open(Native Method)
+  java.io.FileInputStream.<init>(FileInputStream.java:120)
+  java.io.FileInputStream.<init>(FileInputStream.java:79)
+  com.bnpp.source.Zoomit.zoomitInvoices3(Zoomit.java:371)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="zoomitSearch1" time="0.000" classname="com.bnpp.source.Zoomit">
+                <failure type="java.io.FileNotFoundException"
+                  message="/Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)"
+              >
+<![CDATA[java.io.FileNotFoundException: /Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)
+  java.io.FileInputStream.open(Native Method)
+  java.io.FileInputStream.<init>(FileInputStream.java:120)
+  java.io.FileInputStream.<init>(FileInputStream.java:79)
+  com.bnpp.source.Zoomit.zoomitSearch1(Zoomit.java:1497)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="zoomitPaySlips2" time="0.000" classname="com.bnpp.source.Zoomit">
+                <failure type="java.io.FileNotFoundException"
+                  message="/Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)"
+              >
+<![CDATA[java.io.FileNotFoundException: /Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)
+  java.io.FileInputStream.open(Native Method)
+  java.io.FileInputStream.<init>(FileInputStream.java:120)
+  java.io.FileInputStream.<init>(FileInputStream.java:79)
+  com.bnpp.source.Zoomit.zoomitPaySlips2(Zoomit.java:867)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="zoomitInvoices2" time="0.000" classname="com.bnpp.source.Zoomit">
+                <failure type="java.io.FileNotFoundException"
+                  message="/Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)"
+              >
+<![CDATA[java.io.FileNotFoundException: /Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)
+  java.io.FileInputStream.open(Native Method)
+  java.io.FileInputStream.<init>(FileInputStream.java:120)
+  java.io.FileInputStream.<init>(FileInputStream.java:79)
+  com.bnpp.source.Zoomit.zoomitInvoices2(Zoomit.java:244)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="zoomitSearch" time="0.000" classname="com.bnpp.source.Zoomit">
+                <failure type="java.io.FileNotFoundException"
+                  message="/Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)"
+              >
+<![CDATA[java.io.FileNotFoundException: /Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)
+  java.io.FileInputStream.open(Native Method)
+  java.io.FileInputStream.<init>(FileInputStream.java:120)
+  java.io.FileInputStream.<init>(FileInputStream.java:79)
+  com.bnpp.source.Zoomit.zoomitSearch(Zoomit.java:1426)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="zoomitDirectdebit" time="0.000" classname="com.bnpp.source.Zoomit">
+                <failure type="java.io.FileNotFoundException"
+                  message="/Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)"
+              >
+<![CDATA[java.io.FileNotFoundException: /Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)
+  java.io.FileInputStream.open(Native Method)
+  java.io.FileInputStream.<init>(FileInputStream.java:120)
+  java.io.FileInputStream.<init>(FileInputStream.java:79)
+  com.bnpp.source.Zoomit.zoomitDirectdebit(Zoomit.java:483)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="zoomitInvoices1" time="101.093" classname="com.bnpp.source.Zoomit">
+                <failure type="org.openqa.selenium.TimeoutException"
+                  message="Timed out after 30 seconds waiting for visibility of element located by By.className: content_menu_items
+Build info: version: &apos;2.43.1&apos;, revision: &apos;5163bce&apos;, time: &apos;2014-09-10 16:27:58&apos;
+System info: host: &apos;Prabu-iMac.local&apos;, ip: &apos;10.3.0.144&apos;, os.name: &apos;Mac OS X&apos;, os.arch: &apos;x86_64&apos;, os.version: &apos;10.9.5&apos;, java.version: &apos;1.6.0_65&apos;
+Session ID: b0587bf09fd6d03f69a8ef8a9962b95e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.oDxvmC}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.115, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]"
+              >
+<![CDATA[org.openqa.selenium.TimeoutException: Timed out after 30 seconds waiting for visibility of element located by By.className: content_menu_items
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Prabu-iMac.local', ip: '10.3.0.144', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.5', java.version: '1.6.0_65'
+Session ID: b0587bf09fd6d03f69a8ef8a9962b95e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.oDxvmC}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.115, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+  org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:79)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+  com.bnpp.source.LoginModule.loginPositiveflow(LoginModule.java:244)
+  com.bnpp.source.Zoomit.zoomitInvoices1(Zoomit.java:102)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element
+  (Session info: chrome=40.0.2214.115)
+  (Driver info: chromedriver=2.12.301326 (093c7e07b4a916b690e784b0374c7f618f1ea4be),platform=Mac OS X 10.9.5 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.02 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '2.43.1', revision: '5163bce', time: '2014-09-10 16:27:58'
+System info: host: 'Prabu-iMac.local', ip: '10.3.0.144', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.9.5', java.version: '1.6.0_65'
+Session ID: b0587bf09fd6d03f69a8ef8a9962b95e
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities [{platform=MAC, acceptSslCerts=true, javascriptEnabled=true, browserName=chrome, chrome={userDataDir=/var/folders/2h/t6xhcp2137z2cpkc9_qkjmwh0000gn/T/.org.chromium.Chromium.oDxvmC}, rotatable=false, locationContextEnabled=true, mobileEmulationEnabled=false, version=40.0.2214.115, takesHeapSnapshot=true, cssSelectorsEnabled=true, databaseEnabled=false, handlesAlerts=true, browserConnectionEnabled=false, nativeEvents=true, webStorageEnabled=true, applicationCacheEnabled=false, takesScreenshot=true}]
+  sun.reflect.GeneratedConstructorAccessor16.newInstance(Unknown Source)
+  sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+  java.lang.reflect.Constructor.newInstance(Constructor.java:513)
+  org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:204)
+  org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:156)
+  org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:599)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+  org.openqa.selenium.remote.RemoteWebDriver.findElementByClassName(RemoteWebDriver.java:433)
+  org.openqa.selenium.By$ByClassName.findElement(By.java:387)
+  org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+  org.openqa.selenium.support.ui.ExpectedConditions.findElement(ExpectedConditions.java:730)
+  org.openqa.selenium.support.ui.ExpectedConditions.access$0(ExpectedConditions.java:728)
+  org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:130)
+  org.openqa.selenium.support.ui.ExpectedConditions$4.apply(ExpectedConditions.java:1)
+  org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:208)
+  com.bnpp.source.LoginModule.loginPositiveflow(LoginModule.java:244)
+  com.bnpp.source.Zoomit.zoomitInvoices1(Zoomit.java:102)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="zoomitSenders" time="0.000" classname="com.bnpp.source.Zoomit">
+                <failure type="java.io.FileNotFoundException"
+                  message="/Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)"
+              >
+<![CDATA[java.io.FileNotFoundException: /Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)
+  java.io.FileInputStream.open(Native Method)
+  java.io.FileInputStream.<init>(FileInputStream.java:120)
+  java.io.FileInputStream.<init>(FileInputStream.java:79)
+  com.bnpp.source.Zoomit.zoomitSenders(Zoomit.java:594)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="zoomitHistory" time="0.001" classname="com.bnpp.source.Zoomit">
+                <failure type="java.io.FileNotFoundException"
+                  message="/Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)"
+              >
+<![CDATA[java.io.FileNotFoundException: /Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)
+  java.io.FileInputStream.open(Native Method)
+  java.io.FileInputStream.<init>(FileInputStream.java:120)
+  java.io.FileInputStream.<init>(FileInputStream.java:79)
+  com.bnpp.source.Zoomit.zoomitHistory(Zoomit.java:1109)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+            <testcase name="zoomitPaySlips3" time="0.001" classname="com.bnpp.source.Zoomit">
+                <failure type="java.io.FileNotFoundException"
+                  message="/Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)"
+              >
+<![CDATA[java.io.FileNotFoundException: /Users/mobilitytcs/Documents/workspace/MR3_2014_Regression_Suite/src/TransactionData.properties (No such file or directory)
+  java.io.FileInputStream.open(Native Method)
+  java.io.FileInputStream.<init>(FileInputStream.java:120)
+  java.io.FileInputStream.<init>(FileInputStream.java:79)
+  com.bnpp.source.Zoomit.zoomitPaySlips3(Zoomit.java:995)
+  sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+  sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+  sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+  java.lang.reflect.Method.invoke(Method.java:597)
+  org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+  org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+  org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+  org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+  org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+  org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+  org.testng.TestRunner.privateRun(TestRunner.java:767)
+  org.testng.TestRunner.run(TestRunner.java:617)
+  org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+  org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+  org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+  org.testng.SuiteRunner.run(SuiteRunner.java:240)
+  org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+  org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+  org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+  org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+  org.testng.TestNG.run(TestNG.java:1057)
+  org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:111)
+  org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:204)
+  org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:175)
+]]>
+      </failure>
+
+          </testcase>
+  
+  
+  
+</testsuite>

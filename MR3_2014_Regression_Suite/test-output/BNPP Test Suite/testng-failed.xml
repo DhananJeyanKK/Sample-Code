@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [BNPP Test Suite]">
+  <listeners>
+    <listener class-name="org.uncommons.reportng.HTMLReporter"/>
+    <listener class-name="org.uncommons.reportng.JUnitXMLReporter"/>
+  </listeners>
+  <test name="Regression Test Suite - All(failed)">
+    <classes>
+      <class name="com.bnpp.source.Transfers">
+        <methods>
+          <include name="createFreeCommunication"/>
+          <include name="modify"/>
+          <include name="set"/>
+          <include name="tear"/>
+          <include name="createNoCommunication"/>
+          <include name="transfersToSTO"/>
+          <include name="transfersToSTO1"/>
+          <include name="createEuropeanCommunication"/>
+          <include name="createBelgiumCommunication"/>
+        </methods>
+      </class> <!-- com.bnpp.source.Transfers -->
+      <class name="com.bnpp.source.AccountsCardsFAQ">
+        <methods>
+          <include name="faqInnerCheck"/>
+          <include name="set"/>
+          <include name="tear"/>
+          <include name="Accounts"/>
+          <include name="Cards"/>
+        </methods>
+      </class> <!-- com.bnpp.source.AccountsCardsFAQ -->
+    </classes>
+  </test> <!-- Regression Test Suite - All(failed) -->
+</suite> <!-- Failed suite [BNPP Test Suite] -->
