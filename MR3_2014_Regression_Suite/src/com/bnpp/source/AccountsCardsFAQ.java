@@ -212,7 +212,7 @@ public class AccountsCardsFAQ extends DataWeb {
 
 		WebElement active = driver.findElement(By.cssSelector(".header_l1.dropdown-active"));
 		Assert.assertEquals(active.getText().trim(),"TOP FAQS");
-		System.out.println(active.getText().trim()+" is displayed properly");
+		System.out.println(active.getText().trim()+"  is displayed properly successfully");
 
 		driver.findElement(By.xpath(".//*[@id='1392308256421']/div/div/div[2]/div[1]/div/div/div/div/input")).click();
 		driver.findElement(By.xpath(".//*[@id='1392308256421']/div/div/div[2]/div[1]/div/div/div/div/input")).sendKeys("card");
